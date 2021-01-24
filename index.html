@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Damian Lipiński</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+</head>
+<body>
+
+    <nav id="nav">
+        <div class="nav_left">
+            <a href="index.html" id="logo"><img src="./img/logo.png" alt="Damian Lipiński Portfolio"></a>
+        </div>
+        <div class="nav_right">
+            <a href="index.html" class="menu_elements desktop" style="color:#195add;">Case Study</a>
+            <a href="prototypes.html" class="menu_elements desktop">Prototypes</a>
+            <a href="about.html" class="menu_elements desktop">About</a>
+            <a href="my_resume.html" class="menu_elements desktop">My Resume</a>
+            <a href="#" id="lines" class="mobile" onclick="openNav()">|||</a>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html" style="color:#195add;">Case Study</a>
+                <a href="prototypes.html">Prototypes</a>
+                <a href="about.html">About</a>
+                <a href="my_resume.html">My Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="wow fadeInUp" id="welcome">
+        <p>Hello 👋 I’m Damian, a User Experience Designer from Krakow with a passion for human-centered design and crafting
+        inclusive experiences</p>
+    </section>
+
+    <section class="grid_projects">
+        <div class="project wow fadeInLeft" data-wow-delay="1s" id='mapeco' onclick="location.href='mapeco.html';" style="cursor: pointer;">
+            <img src="./img/mapeco_2.png"/>
+            <h1>MAPeco</h1>
+            <h2>App that promotes zero-waste lifestyle</h2>
+        </div>
+        <div class="project wow fadeInRight" data-wow-delay="1s" id='herbaciarnia' onclick="location.href='tearoom.html';" style="cursor: pointer;">
+            <img src="./img/herbaciarnia_4.png" />
+            <h1>Herbaciarniaa</h1>
+            <h2>Platform that makes older people less lonely</h2>
+        </div>
+        <div class="project wow fadeInLeft"  id='share_eat' onclick="location.href='project_temp.html';" style="cursor: pointer;">
+            <img src="./img/share_eat.png" />
+            <h1>Share Eat!</h1>
+            <h2>App that prevent wasting by allowing to share food</h2>
+        </div>
+        <div class="project wow fadeInRight" id='biogo' onclick="location.href='project_temp.html';" style="cursor: pointer;">
+            <img src="./img/biogo_2.png" />
+            <h1>Biogo</h1>
+            <h2>Eco-friendly shop</h2>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social_links">
+            <div class="social_logo wow fadeInUp" onclick="window.open('newurl.html','mywindow');" style="cursor: pointer;"><img src="./img/linkedin.png" alt="linkedin logo"></div>
+            <div class="social_logo wow fadeInUp" data-wow-delay="0.4s"onclick="window.open('newurl.html','mywindow');" style="cursor: pointer;"><img src="./img/github.png" alt="github logo"></div>
+        </div>
+        <div class="copyright wow fadeInUp "data-wow-delay="0.8s">
+            <p>&copy; 2020 created by Damian Lipiński</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
