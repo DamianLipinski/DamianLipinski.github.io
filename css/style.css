@@ -21,7 +21,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
   height: 8rem;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -145,7 +144,6 @@ a {
 }
 
 #welcome {
-  width: 100vw;
   height: 50vh;
   margin-top: 20vh;
   padding: 0 10vw;
