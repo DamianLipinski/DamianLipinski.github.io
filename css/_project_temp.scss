@@ -1,0 +1,164 @@
+#container {
+  hr {
+    width: 60vw;
+    margin: 5vh 0 5vh 20vw;
+    height: 1px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 20vw;
+    width: 60vw;
+    // align-items: center;
+    // justify-content: center;
+    p {
+      width: 60%;
+    }
+    ul {
+      width: 60%;
+      margin-left: 1.5rem;
+
+      li {
+        padding: 0.2rem 0;
+        ol,
+        ul {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+    p,
+    h2,
+    h3 {
+      padding: 0 0 2rem 0;
+    }
+    h4 {
+      padding: 0 0 1rem 0;
+    }
+  }
+
+  .splide {
+    width: 48vw;
+  }
+
+  .image {
+    // display: flex;
+    img {
+      width: 80%;
+    }
+    .splide__slide {
+      width: 80%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  #big_picture {
+    img {
+      width: 100%;
+    }
+  }
+
+  #title {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  #overview {
+    display: grid;
+    //   margin: 0 10vw;
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+
+    p {
+      width: 100%;
+    }
+
+    #right {
+      a {
+        color: #195add;
+      }
+    }
+  }
+
+  #choose_project {
+    display: flex;
+    flex-direction: row;
+    height: 8rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    // margin-top: 5vh;
+    // margin-bottom: 10vh;
+    // padding: 0 10vw;
+
+    a {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #6a6a6a;
+      padding: 1rem 2rem;
+      transition: 0.5s;
+
+      &:hover {
+        color: #195add;
+      }
+    }
+  }
+
+  #personas {
+    display: grid;
+    //   margin: 0 10vw;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    section {
+      margin: 5vh 5vw;
+      width: 90vw;
+
+      p,
+      ul {
+        width: 100%;
+      }
+      .image {
+        // display: flex;
+        img {
+          width: 100%;
+        }
+      }
+
+      .splide {
+        width: 90vw;
+      }
+    }
+
+    #overview {
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+      #left {
+        order: 2;
+      }
+      #right {
+        order: 1;
+      }
+    }
+
+    #personas {
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #container {
+    section {
+      p,
+      ul {
+        width: 80%;
+      }
+    }
+  }
+}

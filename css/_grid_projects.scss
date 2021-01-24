@@ -1,0 +1,107 @@
+.grid_projects {
+  display: grid;
+  margin: 0 10vw;
+  gap: 5rem;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
+.project {
+  background: #333333;
+  width: 100%;
+  height: 50vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+
+  img {
+    margin: 1.5% 0;
+    height: 95%;
+  }
+
+  h1,
+  h2 {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+  }
+
+  &:hover {
+    img {
+      display: none;
+    }
+
+    h1,
+    h2 {
+      height: auto;
+      opacity: 1;
+      transition: height 0ms 0ms, opacity 600ms 0ms;
+    }
+  }
+}
+
+#mapeco {
+  background-color: #bbecc0;
+  // background-color: #8bbf9f;
+  // background: #ddedaa;
+}
+
+#herbaciarnia {
+  // background-color: #dab083;
+  // background-color: #d6ba73;
+  background-color: #ebddb1;
+  // background: #ffac81;
+  img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+#share_eat {
+  // background-color: #ebebeb;
+  // background: #59656f;
+  background-color: #a8bec4;
+  // background-color: #00aa6f47;
+}
+
+#biogo {
+  // background-color: #d3b896;
+  // background-color: #fc016536;
+  // background-color: #cea0ae;
+  background-color: #ddb9db;
+  img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+#pizzahut {
+  background-color: #c48791;
+}
+
+#ninateka {
+  background-color: #86bbd8;
+  img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+#ticket_machine {
+  background-color: #d5d6aa;
+  img {
+    width: 80%;
+    height: auto;
+  }
+  margin-bottom: 10vh;
+}
+
+@media screen and (max-width: 768px) {
+  .grid_projects {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Damian Lipiński</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightbox.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/splide.min.css" />
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div class="nav_left">
+            <a href="index.html" id="logo"><img src="./img/logo.png" alt="Damian Lipiński Portfolio"></a>
+        </div>
+        <div class="nav_right">
+            <a href="index.html" class="menu_elements desktop">Case Study</a>
+            <a href="prototypes.html" class="menu_elements desktop">Prototypes</a>
+            <a href="about.html" class="menu_elements desktop">About</a>
+            <a href="my_resume.html" class="menu_elements desktop">My Resume</a>
+            <a href="#" id="lines" class="mobile" onclick="openNav()">|||</a>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Case Study</a>
+                <a href="prototypes.html">Prototypes</a>
+                <a href="about.html">About</a>
+                <a href="my_resume.html">My Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="container">
+        <section id="big_picture" class="wow fadeInUp" data-wow-duration="2s"><img src="./img/project_temp.jpg" alt="">
+        </section>
+
+        <section id="title" class="wow fadeInUp" data-wow-duration="0.2s"><h1>Title of project</h1></section>
+        <section id="overview">
+            <div id="left" class="wow fadeInUp" data-wow-duration="0.2s">
+                <h2>Overview:</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae porro voluptatum dolorem obcaecati necessitatibus iusto nostrum asperiores ducimus culpa?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae porro voluptatum dolorem obcaecati necessitatibus iusto nostrum asperiores ducimus culpa?</p>
+            </div>
+            <div id="right" class="wow fadeInUp" data-wow-duration="0.2s">
+                <h3>Team:</h3>
+                <p>team</p>
+                <h3>Methods:</h3>
+                <p>methods</p>
+                <h3>Tools:</h3>
+                <p>tools</p>
+                <h3>Timeline:</h3>
+                <p>timeline</p>
+                <h3>Final result:</h3>
+                <a target="_blank" href="https://www.figma.com/files/recent">Open prototype in new tab</a>
+            </div>
+        </section>
+        <hr>
+        <section id="next_section">
+            <h2 class="wow fadeInUp" data-wow-duration="0.8s">Next section</h2>
+            <p class="wow fadeInUp" data-wow-duration="0.8s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem earum ipsum qui numquam necessitatibus quae fuga quam doloribus ullam ducimus, quo dolore porro distinctio optio incidunt! Dolor odio eum fuga!</p>
+            <p class="wow fadeInUp" data-wow-duration="0.8s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus, alias necessitatibus quam debitis praesentium ullam? Sunt ipsam maxime consequuntur obcaecati, asperiores id unde quisquam. Ipsa accusamus expedita incidunt impedit!</p>
+        </section>
+        <hr>
+        <section id="next_section">
+            <h2 class="wow fadeInUp" data-wow-duration="0.8s">Next section</h2>
+            <h4 class="wow fadeInUp" data-wow-duration="0.8s">Subsection</h4>
+            <p class="wow fadeInUp" data-wow-duration="0.8s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem earum ipsum qui numquam necessitatibus quae
+                fuga quam doloribus ullam ducimus, quo dolore porro distinctio optio incidunt! Dolor odio eum fuga!</p>
+                <h4 class="wow fadeInUp" data-wow-duration="0.8s">Subsection</h4>
+            <p class="wow fadeInUp" data-wow-duration="0.8s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus, alias necessitatibus quam debitis
+                praesentium ullam? Sunt ipsam maxime consequuntur obcaecati, asperiores id unde quisquam. Ipsa accusamus
+                expedita incidunt impedit!</p>
+        </section>
+        <section id="choose_project" class="wow fadeInUp" data-wow-duration="0.8s">
+            <a href="index.html" class="footer_projects">All</a>
+            <a href="#" class="footer_projects" style="color: #195add">MAPeco</a>
+            <a href="#" class="footer_projects">Tearoom</a>
+            <a href="#" class="footer_projects">Share Eat!</a>
+            <a href="#" class="footer_projects">Biogo</a>
+        </section>
+
+
+    </section>
+
+    
+
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/splide.min.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 10,
+            'fadeDuration': 100,
+            'disableScrolling': true
+        })
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="text/javascript">
+        lightGallery(document.getElementsByClassName('image')); 
+    </script>
+    <script>
+        var elms = document.getElementsByClassName('splide');
+        for (var i = 0, len = elms.length; i < len; i++) {
+            new Splide(elms[i]).mount();
+        }
+    </script>
+</body>
+
+</html>
