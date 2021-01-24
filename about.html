@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Damian Lipiński</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div class="nav_left">
+            <a href="index.html" id="logo"><img src="./img/logo.png" alt="Damian Lipiński Portfolio"></a>
+        </div>
+        <div class="nav_right">
+            <a href="index.html" class="menu_elements desktop">Case Study</a>
+            <a href="prototypes.html" class="menu_elements desktop" >Prototypes</a>
+            <a href="about.html" class="menu_elements desktop" style="color:#195add;">About</a>
+            <a href="my_resume.html" class="menu_elements desktop">My Resume</a>
+            <a href="#" id="lines" class="mobile" onclick="openNav()">|||</a>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Case Study</a>
+                <a href="prototypes.html" >Prototypes</a>
+                <a href="about.html" style="color:#195add;">About</a>
+                <a href="my_resume.html">My Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div id="photo" class=" wow fadeInLeft">
+            <img src="./img/profile.jpeg" alt="profile picture">
+        </div>
+        <div id="description">
+            <p class="wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, accusantium facilis? Blanditiis ad voluptate commodi, quaerat nobis illo est facere, cupiditate labore expedita atque minus rerum ipsam laudantium odio minima.</p>
+            <p class="wow fadeInUp" data-wow-delay="0.5s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ducimus tempora voluptatibus aspernatur eius! Tempore error omnis velit, ad voluptatem deleniti voluptatum eius animi, quo vero sunt incidunt illo veniam.</p>
+            <p class="wow fadeInUp" data-wow-delay="0.8s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dignissimos nisi neque nemo enim placeat iure ipsum ut, quae facere et quis, itaque autem sunt est sequi veniam quasi eveniet!</p>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
