@@ -196,7 +196,7 @@ a {
           justify-content: center;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   border-radius: 12px;
   position: relative;
 }
@@ -237,6 +237,12 @@ a {
   opacity: 1;
   -webkit-transition: height 0ms 0ms, opacity 600ms 0ms;
   transition: height 0ms 0ms, opacity 600ms 0ms;
+}
+
+.project:hover h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
 }
 
 #mapeco {
