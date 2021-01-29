@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   border-radius: 12px;
   position: relative;
 
@@ -57,20 +57,21 @@
       opacity: 1;
       transition: height 0ms 0ms, opacity 600ms 0ms;
     }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      padding-bottom: 0.5rem;
+    }
   }
 }
 
 #mapeco {
   background-color: #bbecc0;
-  // background-color: #8bbf9f;
-  // background: #ddedaa;
 }
 
 #tearoom {
-  // background-color: #dab083;
-  // background-color: #d6ba73;
   background-color: #ebddb1;
-  // background: #ffac81;
   img {
     width: 80%;
     height: auto;
@@ -78,9 +79,6 @@
 }
 
 #biogo {
-  // background-color: #d3b896;
-  // background-color: #fc016536;
-  // background-color: #cea0ae;
   background-color: #ddb9db;
   img {
     width: 80%;
@@ -93,12 +91,10 @@
 }
 
 #share_eat {
-  // background-color: #86bbd8;
   background-color: #b1b7da;
 }
 
 #ninateka {
-  // background-color: #b6b6e0;
   background-color: #b8dbe0;
   img {
     width: 80%;
@@ -107,7 +103,6 @@
 }
 
 #ticket_machine {
-  // background-color: #d5d6aa;
   background-color: #f0e29e;
   img {
     width: 80%;
