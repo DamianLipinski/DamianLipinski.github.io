@@ -13,6 +13,7 @@
     // justify-content: center;
     p {
       width: 60%;
+      line-height: 1.5;
     }
     ul {
       width: 60%;
@@ -56,6 +57,7 @@
   #big_picture {
     img {
       width: 100%;
+      border-radius: 12px;
     }
   }
 
@@ -78,6 +80,7 @@
     #right {
       a {
         color: #195add;
+        font-weight: bold;
       }
     }
   }
@@ -113,11 +116,19 @@
     }
   }
 
-  #personas {
+  .side_to_side_photo {
     display: grid;
     //   margin: 0 10vw;
     gap: 1rem;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .mapeco_prototype {
+    width: 80%;
+  }
+
+  iframe {
+    width: 100%;
   }
 }
 
@@ -153,7 +164,7 @@
       }
     }
 
-    #personas {
+    .side_to_side_photo {
       grid-template-columns: repeat(1, minmax(200px, 1fr));
     }
   }

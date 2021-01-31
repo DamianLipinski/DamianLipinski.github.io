@@ -178,7 +178,6 @@ a {
 }
 
 .project {
-  background: #333333;
   width: 100%;
   height: 50vh;
   -webkit-box-align: center;
@@ -196,7 +195,7 @@ a {
           justify-content: center;
   align-items: center;
   text-align: center;
-  color: #000000;
+  color: #3d3d3d;
   border-radius: 12px;
   position: relative;
 }
@@ -460,6 +459,7 @@ footer .copyright p {
 
 #container section p {
   width: 60%;
+  line-height: 1.5;
 }
 
 #container section ul {
@@ -504,6 +504,7 @@ footer .copyright p {
 
 #container #big_picture img {
   width: 100%;
+  border-radius: 12px;
 }
 
 #container #title h1 {
@@ -524,6 +525,7 @@ footer .copyright p {
 
 #container #overview #right a {
   color: #195add;
+  font-weight: bold;
 }
 
 #container #choose_project {
@@ -567,12 +569,20 @@ footer .copyright p {
   color: #195add;
 }
 
-#container #personas {
+#container .side_to_side_photo {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
   -ms-grid-columns: (minmax(200px, 1fr))[2];
       grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
+#container .mapeco_prototype {
+  width: 80%;
+}
+
+#container iframe {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -604,7 +614,7 @@ footer .copyright p {
         -ms-flex-order: 1;
             order: 1;
   }
-  #container #personas {
+  #container .side_to_side_photo {
     -ms-grid-columns: (minmax(200px, 1fr))[1];
         grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
