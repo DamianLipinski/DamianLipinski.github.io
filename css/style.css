@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 * {
   margin: 0;
@@ -486,6 +486,24 @@ footer .copyright p {
   padding: 0 0 1rem 0;
 }
 
+#container section video {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+#container section #email {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 80%;
+  padding: 1rem;
+}
+
+#container section #email span {
+  line-height: 1.5;
+  display: block;
+}
+
 #container .splide {
   width: 48vw;
 }
@@ -558,7 +576,7 @@ footer .copyright p {
 
 #container #choose_project a {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 600;
   color: #6a6a6a;
   padding: 1rem 2rem;
   -webkit-transition: 0.5s;
@@ -591,7 +609,9 @@ footer .copyright p {
     width: 90vw;
   }
   #container section p,
-  #container section ul {
+  #container section ul,
+  #container section video,
+  #container section #email {
     width: 100%;
   }
   #container section .image img {
@@ -622,7 +642,8 @@ footer .copyright p {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #container section p,
-  #container section ul {
+  #container section ul,
+  #container section video {
     width: 80%;
   }
 }
