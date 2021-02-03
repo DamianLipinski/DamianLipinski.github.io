@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Damian Lipiński - Tearoom</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightbox.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/splide.min.css" />
+
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div class="nav_left">
+            <a href="index.html" id="logo"><img src="./img/logo.png" alt="Damian Lipiński Portfolio"></a>
+        </div>
+        <div class="nav_right">
+            <a href="index.html" class="menu_elements desktop">Case Study</a>
+            <a href="prototypes.html" class="menu_elements desktop">Prototypes</a>
+            <a href="about.html" class="menu_elements desktop">About</a>
+            <a href="my_resume.html" class="menu_elements desktop">My Resume</a>
+            <a href="#" id="lines" class="mobile" onclick="openNav()">|||</a>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Case Study</a>
+                <a href="prototypes.html">Prototypes</a>
+                <a href="about.html">About</a>
+                <a href="my_resume.html">My Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="container">
+        <section id="big_picture" class="wow fadeInUp" data-wow-duration="2s"><img
+                src="./img/case_study_tearoom/big_picture_tearoom.jpg" alt="big picture with kid and grandparent">
+        </section>
+
+        <section id="title" class="wow fadeInUp" data-wow-duration="0.2s">
+            <h1>Share Eat!</h1>
+        </section>
+        <section id="overview">
+            <div id="left" class="wow fadeInUp" data-wow-duration="0.2s">
+                <h2>Overview:</h2>
+                <p>We have noticed that students often don't have time or skills for cooking meals. We decided to design an app that would
+                solve this problem.</p>
+                <p>We had few ideas about how to deal with this. In the end, we came up with student food-sharing. In the qualitative
+                interviews, we found out that students often cook too much. This platform would allow posting a notice, that we can give
+                away the food are not able to eat.</p>
+                <p>It makes it possible to eat a home-made meal near the place of residence, prevents monotony in the kitchen, and reduces
+                the amount of food that is thrown away. Moreover, it is a good way to build a helping each other community among
+                students.</p>
+            </div>
+            <div id="right" class="wow fadeInUp" data-wow-duration="0.2s">
+                <h3>Team:</h3>
+                <p>3 members</p>
+                <h3>Tools:</h3>
+                <p>Figma</p>
+                <h3>Timeline:</h3>
+                <p>2020</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" height="700px"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwhvYRwZ29NkgkLTxNUyBTm%2Fp-Share-eat%3Fnode-id%3D24%253A4062%26viewport%3D485%252C491%252C0.06568223237991333%26scaling%3Dcontain"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+
+        <section id="choose_project" class="wow fadeInUp" data-wow-duration="0.8s">
+            <span>Prototypes: </span>
+            <a href="prototypes.html" class="footer_projects">All</a>
+            <a href="prototypes_pizzahut.html" class="footer_projects">Pizza Hut</a>
+            <a href="prototypes_share_eat.html" class="footer_projects"
+                style="color: #195add; font-weight: 700">Share Eat!</a>
+            <a href="prototypes_ninateka.html" class="footer_projects">Ninateka</a>
+            <a href="prototypes_philharmonic .html" class="footer_projects">Philharmonic</a>
+        </section>
+
+
+    </section>
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/splide.min.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 10,
+            'fadeDuration': 100,
+            'disableScrolling': true
+        })
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="text/javascript">
+        lightGallery(document.getElementsByClassName('image')); 
+    </script>
+    <script>
+        var elms = document.getElementsByClassName('splide');
+        for (var i = 0, len = elms.length; i < len; i++) {
+            new Splide(elms[i]).mount();
+        }
+    </script>
+
+</body>
+
+</html>
