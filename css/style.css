@@ -276,20 +276,21 @@ a {
 
 #ninateka {
   background-color: #b8dbe0;
+  margin-bottom: 10vh;
 }
 
 #ninateka img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
-#ticket_machine {
+#philharmonia {
   background-color: #f0e29e;
   margin-bottom: 10vh;
 }
 
-#ticket_machine img {
-  width: 80%;
+#philharmonia img {
+  width: 60%;
   height: auto;
 }
 
