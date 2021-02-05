@@ -11,6 +11,10 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+body p {
+  line-height: 1.5;
+}
+
 /*Utilities*/
 a {
   text-decoration: none;
